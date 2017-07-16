@@ -1,6 +1,8 @@
 package pers.zgesw.entity;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Administrator
@@ -29,6 +31,9 @@ public class User {
 	private String faceUrl;// 头像存储路径
 	private String safequestion;// 用户安全问题
 	private String safeanswer;// 用户安全问题答案
+
+	private Set<SellInfo> sellInfos = new HashSet<SellInfo>();
+	private Set<BuyInfo> buyInfos = new HashSet<BuyInfo>();
 
 	public User() {
 		super();
@@ -184,6 +189,22 @@ public class User {
 
 	public void setSafeanswer(String safeanswer) {
 		this.safeanswer = safeanswer;
+	}
+
+	public Set<SellInfo> getSellInfos() {
+		return sellInfos;
+	}
+
+	public void setSellInfos(Set<SellInfo> sellInfos) {
+		this.sellInfos = sellInfos;
+	}
+
+	public Set<BuyInfo> getBuyInfos() {
+		return buyInfos;
+	}
+
+	public void setBuyInfos(Set<BuyInfo> buyInfos) {
+		this.buyInfos = buyInfos;
 	}
 
 	@Override

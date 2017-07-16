@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="/struts-tags"  prefix="s"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,14 +14,9 @@
 <body>
 	<div id="top">
 		<ul class="inTop clearfix">
-			<div class="weiCode">
-				<span></span>
-			</div>
-			</li>
-			<li class="fr"><a href="aboutda5a.html?part=sitemap"
+			<li class="fr"><a href="${pageContext.request.contextPath}/jsp/user/login.jsp"
 				target="_blank">登陆</a></li>
-			<li class="fr"><a href="aboutf172.html?part=faq" target="_blank">免费注册</a></li>
-			<script type="text/javascript" src="javascript7bd8.html?part=iflogin"></script>
+			<li class="fr"><a href="${pageContext.request.contextPath}/jsp/user/register.jsp" target="_blank">免费注册</a></li>
 		</ul>
 	</div>
 	<div id="header">
@@ -49,9 +44,9 @@
 		<div class="inNav clearfix">
 			<span class="fl">全部二手分类</span>
 			<ul class="fl">
-				<li><a href="http://www.zzgyxy.com">郑工官网</a></li>
-				<li><a href="http://jwweb.zzgyxy.com/default2.aspx/">郑工教务处管理系统</a></li>
-				<li><a href="http://new.taoertao.com/">郑工BBS</a></li>
+				<li><a href="http://www.zzgyxy.com" target="_blank">郑工官网</a></li>
+				<li><a href="http://jwweb.zzgyxy.com/" target="_blank">郑工教务处管理系统</a></li>
+				<li><a href="http://new.taoertao.com/" target="_blank">郑工BBS</a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,234 +54,27 @@
 		<div class="mainTop clearfix">
 			<div id="classification" class="fl">
 				<ul>
-					<li>
-						<p>
-							<a href="category-catid-154.html" target="_blank">跳蚤市场</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-161.html"
-										target="_blank" title="二手笔记本">二手笔记本</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-162.html"
-										target="_blank" title="手机/数码产品">手机/数码产品</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-164.html"
-										target="_blank" title="小功率电器">小功率电器</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-165.html"
-										target="_blank" title="运动/健身器材">运动/健身器材</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-166.html"
-										target="_blank" title="音响/乐器/影音">音响/乐器/影音</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-167.html"
-										target="_blank" title="书籍/复习资料/学习用品">书籍/复习资料/学习用品</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-168.html"
-										target="_blank" title="艺术/工艺/收藏品">艺术/工艺/收藏品</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-169.html"
-										target="_blank" title="化妆品/小饰品">化妆品/小饰品</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-170.html"
-										target="_blank" title="服饰/箱包/鞋帽">服饰/箱包/鞋帽</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-171.html"
-										target="_blank" title="其他日用品">其他日用品</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-252.html" target="_blank">校园代步</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-254.html"
-										target="_blank" title="二手摩托车">二手摩托车</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-255.html"
-										target="_blank" title="自行车/电动车">自行车/电动车</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-260.html"
-										target="_blank" title="配件/其他">配件/其他</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-157.html" target="_blank">兼职招聘</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-189.html"
-										target="_blank" title="平面设计/网页设计">平面设计/网页设计</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-191.html"
-										target="_blank" title="兼职/促销/实习">兼职/促销/实习</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-194.html"
-										target="_blank" title="销售/业务">销售/业务</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-198.html"
-										target="_blank" title="其它招聘">其它招聘</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-289.html"
-										target="_blank" title="家教">家教</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-155.html" target="_blank">房屋交易</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-173.html"
-										target="_blank" title="房屋转租">房屋转租</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-174.html"
-										target="_blank" title="合租房">合租房</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-176.html"
-										target="_blank" title="求租房">求租房</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-156.html" target="_blank">同校活动</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-181.html"
-										target="_blank" title="团购/打折">团购/打折</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-182.html"
-										target="_blank" title="结伴出游">结伴出游</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-183.html"
-										target="_blank" title="相约运动">相约运动</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-184.html"
-										target="_blank" title="公益活动/志愿者">公益活动/志愿者</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-185.html"
-										target="_blank" title="讲座/研讨会/招聘会">讲座/研讨会/招聘会</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-186.html"
-										target="_blank" title="演出/展览">演出/展览</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-290.html"
-										target="_blank" title="社团活动">社团活动</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-158.html" target="_blank">志同道合</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-199.html"
-										target="_blank" title="帅哥美女">帅哥美女</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-202.html"
-										target="_blank" title="同性别交友">同性别交友</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-203.html"
-										target="_blank" title="同乡会">同乡会</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-204.html"
-										target="_blank" title="兴趣交友">兴趣交友</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-205.html"
-										target="_blank" title="真情告白/祝福">真情告白/祝福</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-206.html"
-										target="_blank" title="寻人寻友">寻人寻友</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-207.html"
-										target="_blank" title="技能交换">技能交换</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-285.html" target="_blank">以物易物</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-286.html"
-										target="_blank" title="以物易物">以物易物</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
-					<li>
-						<p>
-							<a href="category-catid-282.html" target="_blank">创业特区</a>
-						</p>
-						<div class="menu">
-							<dl>
-								<dd>
-									<a class="goodLink" href="category-catid-283.html"
-										target="_blank" title="创业项目">创业项目</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-284.html"
-										target="_blank" title="创业政策">创业政策</a>
-								</dd>
-								<dd>
-									<a class="goodLink" href="category-catid-287.html"
-										target="_blank" title="招兵买马">招兵买马</a>
-								</dd>
-							</dl>
-						</div>
-					</li>
+					<s:iterator var="c" value="cList">
+						<li>
+							<p>
+								<a
+									href="${pageContext.request.contextPath }/categoryAction.action?cid=<s:property value="#c.cid"/>"
+									target="_blank"><s:property value="#c.cname" /></a>
+							</p>
+							<div class="menu">
+								<dl>
+									<s:iterator var="cs" value="#c.categorySeconds">
+										<dd>
+											<a class="goodLink"
+												href="${pageContext.request.contextPath }/categorySecondAction.action?csid=<s:property value="#cs.csid"/>"
+												target="_blank" title="<s:property value="#cs.csname"/>"><s:property
+													value="#cs.csname" /></a>
+										</dd>
+									</s:iterator>
+								</dl>
+							</div>
+						</li>
+					</s:iterator>
 				</ul>
 			</div>
 			<div class="indexMid fl">
@@ -305,16 +93,11 @@
 				<div class="siteNews">
 					<ul>
 						<li class="newsTit">淘淘新闻<span><a href="#">更多></a></span></li>
-						<li><a title="福字 福字图片大全 支付宝五福 淘二淘-大学生二手网送给大家"
-							href="news-id-8.html" target="_blank">福字 福字图片大全 支付宝五福 淘二淘-大学生</a></li>
-						<li><a title="淘二淘即将上线手机版" href="news-id-7.html"
-							target="_blank">淘二淘即将上线手机版</a></li>
-						<li><a title="淘二淘-同学淘宝店活动招募" href="news-id-6.html"
-							target="_blank">淘二淘-同学淘宝店活动招募</a></li>
-						<li><a title="开学啦~学弟学妹就要来啦~" href="news-id-5.html"
-							target="_blank">开学啦~学弟学妹就要来啦~</a></li>
-						<li><a title="芜湖市大学生创业孵化基地" href="news-id-4.html"
-							target="_blank">芜湖市大学生创业孵化基地</a></li>
+						<li><a title="新闻一" href="#" >新闻一</a></li>
+						<li><a title="新闻一" href="#" >新闻一</a></li>
+						<li><a title="新闻一" href="#" >新闻一</a></li>
+						<li><a title="新闻一" href="#" >新闻一</a></li>
+						<li><a title="新闻一" href="#" >新闻一</a></li>
 					</ul>
 				</div>
 			</div>
@@ -395,7 +178,7 @@
 						class="fr"><a href="category-catid-167.html">更多></a></span>
 				</div>
 				<ul>
-					<s:iterator >
+					<s:iterator>
 						<li>· <a href="information-id-5469.html" target="_blank">考研复习资料</a></li>
 						<li>· <a href="information-id-5469.html" target="_blank">考研复习资料</a></li>
 						<li>· <a href="information-id-5469.html" target="_blank">考研复习资料</a></li>
@@ -405,7 +188,7 @@
 						<li>· <a href="information-id-5469.html" target="_blank">考研复习资料</a></li>
 						<li>· <a href="information-id-5469.html" target="_blank">考研复习资料</a></li>
 					</s:iterator>
-					
+
 				</ul>
 			</div>
 			<div class="digital">
@@ -454,7 +237,7 @@
 		<a class="go"></a>
 	</div>
 
-
+	<s:debug></s:debug>
 
 
 	<script type="text/javascript"

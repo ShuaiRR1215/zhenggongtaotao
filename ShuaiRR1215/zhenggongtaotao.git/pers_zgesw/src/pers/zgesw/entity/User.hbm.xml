@@ -1,66 +1,78 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2017-7-16 9:33:46 by Hibernate Tools 3.5.0.Final -->
+<!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="pers.zgesw.entity.User" table="USER">
-        <id name="uid" type="java.lang.Integer">
-            <column name="uid" />
-            <generator class="native" />
-        </id>
-        <property name="username" type="java.lang.String">
-            <column name="username" />
-        </property>
-        <property name="password" type="java.lang.String">
-            <column name="password" />
-        </property>
-        <property name="salt" type="java.lang.String">
-            <column name="salt" />
-        </property>
-        <property name="realName" type="java.lang.String">
-            <column name="realName" />
-        </property>
-        <property name="sex" type="java.lang.Integer">
-            <column name="sex" />
-        </property>
-        <property name="birthday" type="java.util.Date">
-            <column name="birthday" />
-        </property>
-        <property name="phone" type="java.lang.String">
-            <column name="phone" />
-        </property>
-        <property name="qq" type="java.lang.String">
-            <column name="qq" />
-        </property>
-        <property name="weixin" type="java.lang.String">
-            <column name="weixin" />
-        </property>
-        <property name="idCard" type="java.lang.String">
-            <column name="idCard" />
-        </property>
-        <property name="email" type="java.lang.String">
-            <column name="email" />
-        </property>
-        <property name="regDate" type="java.util.Date">
-            <column name="regDate" />
-        </property>
-        <property name="state" type="java.lang.Integer">
-            <column name="state" />
-        </property>
-        <property name="code" type="java.lang.String">
-            <column name="code" />
-        </property>
-        <property name="verified" type="java.lang.Integer">
-            <column name="verified" />
-        </property>
-        <property name="faceUrl" type="java.lang.String">
-            <column name="faceUrl" />
-        </property>
-        <property name="safequestion" type="java.lang.String">
-            <column name="safequestion" />
-        </property>
-        <property name="safeanswer" type="java.lang.String">
-            <column name="safeanswer" />
-        </property>
-    </class>
+	<class name="pers.zgesw.entity.User" table="user">
+		<id name="uid" type="java.lang.Integer">
+			<column name="uid" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="username" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="salt" type="java.lang.String">
+			<column name="salt" />
+		</property>
+		<property name="realName" type="java.lang.String">
+			<column name="realName" />
+		</property>
+		<property name="sex" type="java.lang.Integer">
+			<column name="sex" />
+		</property>
+		<property name="birthday" type="java.util.Date">
+			<column name="birthday" />
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="phone" />
+		</property>
+		<property name="qq" type="java.lang.String">
+			<column name="qq" />
+		</property>
+		<property name="weixin" type="java.lang.String">
+			<column name="weixin" />
+		</property>
+		<property name="idCard" type="java.lang.String">
+			<column name="idCard" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<property name="regDate" type="java.util.Date">
+			<column name="regDate" />
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="state" />
+		</property>
+		<property name="code" type="java.lang.String">
+			<column name="code" />
+		</property>
+		<property name="verified" type="java.lang.Integer">
+			<column name="verified" />
+		</property>
+		<property name="faceUrl" type="java.lang.String">
+			<column name="faceUrl" />
+		</property>
+		<property name="safequestion" type="java.lang.String">
+			<column name="safequestion" />
+		</property>
+		<property name="safeanswer" type="java.lang.String">
+			<column name="safeanswer" />
+		</property>
+		<set name="sellInfos" lazy="false">
+			<key>
+				<column name="uid" />
+			</key>
+			<one-to-many class="pers.zgesw.entity.SellInfo" />
+		</set>
+		<set name="buyInfos" lazy="false">
+			<key>
+				<column name="uid" />
+			</key>
+			<one-to-many class="pers.zgesw.entity.BuyInfo" />
+		</set>
+	</class>
 </hibernate-mapping>

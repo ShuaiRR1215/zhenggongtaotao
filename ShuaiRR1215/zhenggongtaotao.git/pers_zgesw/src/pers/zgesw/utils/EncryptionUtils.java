@@ -13,7 +13,7 @@ import org.apache.commons.codec.binary.Hex;
  */
 public class EncryptionUtils {
 
-	public static String myEncode(String password, String salt) {
+	public static String encode(String password, String salt) {
 		byte[] bytes = (password + salt).getBytes();
 		return Hex.encodeHexString(bytes);
 

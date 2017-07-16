@@ -1,12 +1,13 @@
 package pers.zgesw.entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Category {
 	private Integer cid;
 	private String cname;
 
-	private Set<CategorySecond> categorySeconds;
+	private Set<CategorySecond> categorySeconds = new HashSet<CategorySecond>();
 
 	public Category() {
 		super();

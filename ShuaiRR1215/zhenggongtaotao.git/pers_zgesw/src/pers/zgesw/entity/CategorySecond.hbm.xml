@@ -1,18 +1,24 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2017-7-16 9:33:46 by Hibernate Tools 3.5.0.Final -->
+<!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-	<class name="pers.zgesw.entity.CategorySecond" table="CATEGORYSECOND">
-		<id name="csid" type="java.lang.Integer">
-			<column name="csid" />
-			<generator class="native" />
-		</id>
-		<property name="csname" type="java.lang.String">
-			<column name="csname" />
-		</property>
-		<many-to-one name="category" class="pers.zgesw.entity.Category"
-			fetch="join" column="cid">
-		</many-to-one>
-	</class>
+    <class name="pers.zgesw.entity.CategorySecond" table="categorysecond">
+        <id name="csid" type="java.lang.Integer">
+            <column name="csid" />
+            <generator class="native" />
+        </id>
+        <property name="csname" type="java.lang.String">
+            <column name="csname" />
+        </property>
+        <many-to-one name="category" column="cid" lazy="false"
+	class="pers.zgesw.entity.Category" fetch="join">
+        </many-to-one>
+        <set name="sellInfos" >
+            <key>
+                <column name="csid" />
+            </key>
+            <one-to-many class="pers.zgesw.entity.SellInfo" />
+        </set>
+    </class>
 </hibernate-mapping>

@@ -69,7 +69,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 			if (user != null) {
 				String realPassword = user.getPassword();
 				String salt = user.getSalt();
-				if (realPassword.equals(EncryptionUtils.myEncode(currPassword, salt))) {
+				if (realPassword.equals(EncryptionUtils.encode(currPassword, salt))) {
 					if (user.getState() == 0) {
 						user.setIdCard("您尚未激活，请去邮箱激活");
 						ActionContext.getContext().getValueStack().set("user", user);
@@ -107,7 +107,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 		} else if (user != null) {
 			// 对密码进行加密处理
 			String salt = EncryptionUtils.getSalt();
-			String newpassowrd = EncryptionUtils.myEncode(user.getPassword(), salt);
+			String newpassowrd = EncryptionUtils.encode(user.getPassword(), salt);
 			// 补全当前注册用户信息
 			user.setSalt(salt);
 			user.setPassword(newpassowrd);
@@ -130,7 +130,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	 * @return
 	 */
 	public String foundPassword() {
-		if(!isTrue()) {
+		if (!isTrue()) {
 			user.setCode("验证码错误");
 			ActionContext.getContext().getValueStack().set("user", user);
 			return "fCodeError";
@@ -153,18 +153,17 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	}
 
 	/**
-	 * 对退出进行控制
-	 * 检查session中是否存在一个user的属性
+	 * 对退出进行控制 检查session中是否存在一个user的属性
+	 * 
 	 * @return
 	 */
 	public String doQuit() {
-		
+
 		User existUser = (User) ServletActionContext.getRequest().getSession().getAttribute("existUser");
-		if(existUser!=null) {
+		if (existUser != null) {
 			ServletActionContext.getRequest().getSession().removeAttribute("existUser");
 		}
-		
-		
+
 		return NONE;
 	}
 

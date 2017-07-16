@@ -10,8 +10,14 @@
 		<property name="hibernate.connection.autocommit">true</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 		<!-- 引入实体映射文件 -->
-		<mapping resource="pers/zgesw/entity/User.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/Admin.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/BuyInfo.hbm.xml" />
 		<mapping resource="pers/zgesw/entity/Category.hbm.xml" />
 		<mapping resource="pers/zgesw/entity/CategorySecond.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/Comment.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/ImgInfo.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/Reply.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/SellInfo.hbm.xml" />
+		<mapping resource="pers/zgesw/entity/User.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
