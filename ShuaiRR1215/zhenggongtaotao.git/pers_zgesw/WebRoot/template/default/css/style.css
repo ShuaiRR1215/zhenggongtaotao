@@ -1,0 +1,362 @@
+body.blue{ background:url(http://www.taoertao.com/template/default/images/global/bluebg.gif) center 0 repeat-x}
+/*body.green{ background:url(../images/global/greenbg.gif) center 0 no-repeat;}*/
+body.orange{ background:url(http://www.taoertao.com/template/default/images/global/orangebg.gif) center 0 no-repeat}
+
+body.blue .subsearch ul li a:hover{ background-color:#ECF5FA; color:#4389C7;}
+body.green .subsearch ul li a:hover{ background-color:#E8F2CF; color:#41B044;}
+body.orange .subsearch ul li a:hover{ background-color:#FFF5EF; color:#FF6600;}
+
+.bartop{color:#585858; background-color:#f9f9f9; border-bottom:1px #d4d4d4 solid; height:28px; line-height:28px; width:100%;}
+.bartop .barleft a{color:#585858}
+.bartop .barleft a:hover{color:#ff0000; text-decoration:underline}
+.bartop .barcenter{ margin-left:auto; margin-right:auto; width:1000px;}
+.bartop .barleft{ width:590px; text-align:left; float:left;}
+.bartop .barright{ width:400px; text-align:right; float:right; overflow:hidden; height:28px; overflow:hidden;}
+.bartop .barright a:hover{ text-decoration:none;}
+.bartop .barleft .barcity span{ color:#FF4711; font-size:14px; font-weight:bold;}
+.bartop .barleft ul{ float:left;}
+.bartop .barright ul{ float:right;}
+.bartop .barleft ul.barwap{ background:url(http://www.taoertao.com/template/default/images/global/wap.gif) 0 1px no-repeat; padding-left:15px; margin-left:10px;}
+.bartop ul{margin:6px 8px 0 8px;line-height:18px;display:inline;position:relative;z-index:99999 }
+.bartop div.choosetheme{ float:left}
+.bartop div#themelist{ float:right; }
+.bartop ul li{ float:left; width:15px; height:18px; display:block; overflow:hidden;}
+.bartop ul.line {width:2px;height:10px;overflow:hidden;background:#fff;margin:9px 0 0 0}
+.bartop ul.line u{display:block;width:1px;height:18px;overflow:hidden;background:#d4d4d4;}
+
+.logosearchtel{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:auto;
+	overflow:hidden;
+}
+	.logosearchtel .weblogo{
+		width:auto;
+		display:block;
+		float:left;
+		text-align:left;
+		vertical-align:middle;
+		height:80px;
+	}
+	.logosearchtel .weblogo img{
+		margin-top:15px;
+	}
+	.logosearchtel .websearch{
+		width:430px;
+		display:block;
+		float:right;
+		margin-top:12px;
+		margin-left:15px;
+	}
+	.logosearchtel .postedit{
+		float:right;
+		display:block;
+		text-align:right;
+		margin-top:27px;
+	}
+	
+	.logosearchtel .postedit a{font-weight:bold; font-size:14px; height:33px; display:block; float:left; margin-left:5px; background-image:url(http://www.taoertao.com/template/default/images/global/postedit.gif); background-repeat:no-repeat; line-height:33px; text-align:center; text-decoration:none;}
+	.logosearchtel .postedit a.post{ color:#EE5500; background-position:0 0; padding-left:30px; width:106px;}
+	.logosearchtel .postedit a.post:hover{ background-position:0 -33px;}
+	.logosearchtel .postedit a.edit{ color:#848484; background-position:0 -66px;  width:126px;}
+	.logosearchtel .postedit a.edit:hover{ background-position:0 -99px;}
+		
+	/*头部搜索栏*/
+	.logosearchtel .websearch{
+		height:auto;
+		display:block;
+		overflow:hidden;
+		text-align:left;
+	}
+	.websearch .sch_t_frm{ margin:15px 0 0 0px; overflow:hidden; width:406px; height:32px;}
+	.websearch .sch_ct{float:left; display:block; height:55px; overflow:hidden; width:auto;}
+	.websearch .topsearchinput{
+		height:28px;
+		line-height:28px;
+		_line-height:30px;
+		padding:0 10px 0 10px;
+		_padding-right:0;
+		width:255px;
+		border-right:none;
+		border-left:none;
+		/*background:#fff url(../images/top_search_bg1.gif) no-repeat left center;*/
+		float:left; 
+		display:block;
+		color:#666;
+		font-size:12px
+	}
+	.blue .sch_t_frm .select{
+		background:#fff url(http://www.taoertao.com/template/default/images/global/top_search_cate_bg.gif) no-repeat right top; 
+		border-top:2px solid #0D7EBB;
+		border-bottom:2px solid #0D7EBB;
+		border-left:2px solid #0D7EBB;
+	}
+	.blue .selectbox-wrapper{
+		border-left:2px solid #0D7EBB; 
+		border-right:2px solid #0D7EBB; 
+		border-bottom:2px solid #0D7EBB; 
+	}
+	.blue .topsearchinput{
+		border-top:2px solid #0D7EBB;
+		border-bottom:2px solid #0D7EBB;
+	}
+	.green .sch_t_frm .select{
+		background:#fff url(http://www.taoertao.com/template/default/images/global/top_search_cate_bg.gif) no-repeat right top; 
+		border-top:2px solid #2C8E35;
+		border-bottom:2px solid #2C8E35;
+		border-left:2px solid #2C8E35;
+	}
+	.green .selectbox-wrapper{
+		border-left:2px solid #2C8E35; 
+		border-right:2px solid #2C8E35; 
+		border-bottom:2px solid #2C8E35; 
+	}
+	.green .topsearchinput{
+		border-top:2px solid #2C8E35;
+		border-bottom:2px solid #2C8E35;
+	}
+	.orange .sch_t_frm .select{
+		background:#fff url(http://www.taoertao.com/template/default/images/global/top_search_cate_bg.gif) no-repeat right top; 
+		border-top:2px solid #ff6f0e;
+		border-bottom:2px solid #ff6f0e;
+		border-left:2px solid #ff6f0e;
+	}
+	.orange .selectbox-wrapper{
+		border-left:2px solid #ff6f0e; 
+		border-right:2px solid #ff6f0e; 
+		border-bottom:2px solid #ff6f0e; 
+	}
+	.orange .topsearchinput{
+		border-top:2px solid #ff6f0e;
+		border-bottom:2px solid #ff6f0e;
+	}
+	
+	.websearch .sch_t_frm .select {
+		vertical-align: middle;
+		width:55px;
+		float:left;
+		height:28px;
+		color:#000;
+		padding-left:2px;
+	}
+	.websearch .sch_t_frm .select ul{ 
+		margin-top:5px;
+		font-size:12px; 
+		padding-top:2px;
+		padding-right:-1px;
+	}
+	
+	.websearch div.selectbox-wrapper { 
+		position:absolute; 
+		background-color:#ffffff; 
+		border-top:none; 
+		text-align:left;
+		margin-top:6px;
+		*margin-top:4px;
+		margin-right:0;
+		margin-bottom:0;
+		margin-left:-4px;
+		line-height:24px;
+	}
+	
+	.websearch div.selectbox-wrapper ul li.selected {}
+	.websearch div.selectbox-wrapper ul li.current { 
+		background-color:#f1f1f1; 
+		width:49px;
+		text-indent:3px;
+	}
+	.websearch div.selectbox-wrapper ul li { 
+		padding:0px 3px;
+		cursor:pointer; 
+		width:49px;
+		text-indent:3px;
+		margin-top:0;
+	}
+	.websearch .selectbox { 
+		display:block; 
+		width:55px;
+		background:transparent!important; 
+		padding:0 0 0 4px; 
+		cursor: pointer; 
+		border:0 none; 
+		color:#000;
+		text-align:left;
+	}
+	
+	.websearch .btn-normal{
+		line-height:32px;
+		width:70px;
+		text-align:center;
+		height:32px;
+		display:block;
+		float:left;
+		font-size:14px;
+		font-weight:bold;
+		color:#ffffff;
+		text-decoration:none;
+		cursor:pointer;
+		border:none;
+	}
+	
+	.blue .websearch .btn-normal{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg.gif) 0 0 no-repeat;
+	}
+	.blue .websearch .btn-normal:hover{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg.gif) 0 -32px no-repeat;
+	}
+	
+	.green .websearch .btn-normal{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg_green.gif) 0 0 no-repeat;
+	}
+	.green .websearch .btn-normal:hover{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg_green.gif) 0 -32px no-repeat;
+	}
+
+	.orange .websearch .btn-normal{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg_orange.gif) 0 0 no-repeat;
+	}
+	.orange .websearch .btn-normal:hover{
+		background:url(http://www.taoertao.com/template/default/images/global/topsearch_buttonbg_orange.gif) 0 -32px no-repeat;
+	}
+
+.body1000{ margin-left:auto; margin-right:auto; width:1000px;}
+
+.daohang,.daohang ul,.daohang li{background-image:url(http://www.taoertao.com/template/default/images/global/daohangbg.gif);}
+.daohang{ width:997px; margin-left:auto; margin-right:auto; overflow:hidden; text-align:center; height:40px; background-repeat:repeat-x; margin-top:10px; padding-left:3px;}
+.daohang ul{ width:1000px; margin-left:auto; margin-right:auto; text-align:left; background-repeat:no-repeat; height:40px;}
+
+.daohang li{ float:left; background-repeat:no-repeat; padding-right:2px; padding-left:2px;}
+.daohang a{ font-size:16px; font-family:"microsoft yahei"; line-height:40px; color:#ffffff; padding-left:13px; padding-right:13px;background-repeat:no-repeat; height:40px; display:block; float:left;*padding-left:13px;*padding-right:12px;}
+.daohang a:hover,.daohang a.current{ font-weight:bold; background-image:url(http://www.taoertao.com/template/default/images/global/daohangbg_current.gif); text-decoration:none;background-repeat:no-repeat; text-align:center; color:#ffffff;}
+
+.blue .daohang{ background-position:0 0;}
+.green .daohang{ background-position:0 -40px; color:#FFFFBB!important;}
+.orange .daohang{ background-position:0 -80px;}
+
+.blue .daohang ul{background-position:left -120px;}
+.green .daohang ul{background-position:left -160px;}
+.orange .daohang ul{background-position:left -200px;}
+
+.blue .daohang li{background-position:right -120px;}
+.green .daohang li{background-position:right -160px;}
+.orange .daohang li{background-position:right -200px;}
+
+.green .daohang a{ color:#ffffbb!important;}
+.blue .daohang a.current,.blue .daohang a:hover{background-position:center 0;}
+.green .daohang a.current,.green .daohang a:hover{background-position:center -40px;}
+.orange .daohang a.current,.orange .daohang a:hover{background-position:center -80px;}
+
+.cateintro{ width:998px; overflow:auto; line-height:24px; border-left:1px #d4d4d4 solid; border-right:1px #d4d4d4 solid; border-top:1px #d4d4d4 solid; text-align:left; color:#808080;}
+.cateintro .introleft{ width:125px; float:left; margin-top:18px; margin-left:15px; margin-bottom:16px;}
+.cateintro .introright{width:820px;_width:810px; float:right; margin-top:18px; margin-right:10px; margin-bottom:16px;}
+.cateintro .introright a{ float:left; width:136px; height:26px; color:#808080;}
+.cateintro .introright a:hover{ color:#ff0000;}
+
+.footsearch{ background-color:#fcfcfc; border:1px #d4d4d4 solid; height:76px; width:998px;}
+.footsearch ul{margin-top:20px; margin-left:auto; margin-right:auto; width:700px;}
+.shadow{ background:url(http://www.taoertao.com/template/default/images/global/daohangbg.gif) 0 -240px repeat-x; width:100%; height:2px;}
+.footsearch_input{ border:1px #d4d4d4 solid; border-right:none;  float:left; width:410px; height:28px; line-height:28px; font-size:14px; color:#c8c8c8; padding-left:10px; padding-right:10px;}
+.footsearch_submit{ border:1px #d4d4d4 solid;font-weight:bold; color:#000; font-size:14px; cursor:pointer; height:32px; background:url(http://www.taoertao.com/template/default/images/global/search_buttonbg.gif) 0 0 repeat-x; float:left; width:130px;}
+.footsearch_post{border:1px #d4d4d4 solid; border-left:none; font-weight:bold; color:#ee5500; font-size:14px; cursor:pointer; height:32px; background:url(http://www.taoertao.com/template/default/images/global/search_buttonbg.gif) 0 -64px repeat-x; margin-left:0; float:left;  width:130px;}
+.footsearch_submit:hover{background:url(http://www.taoertao.com/template/default/images/global/search_buttonbg.gif) 0 -32px repeat-x;}
+.footsearch_post:hover{background:url(http://www.taoertao.com/template/default/images/global/search_buttonbg.gif) 0 -96px repeat-x;}
+
+.footabout{ color:#888; margin-left:auto; margin-right:auto; margin-top:10px;}
+.footabout a{ color:#000; padding-right:15px; margin-right:15px; border-right:1px #ccc solid;}
+.footabout a.backnone{ border-right:none;}
+.footabout span{ margin-left:15px; margin-right:15px;}
+.footcopyright{ margin-top:10px; color:#888; padding-bottom:10px;}
+.footcopyright a{ color:#888; margin-left:10px;}
+.debuginfo{ margin-bottom:10px;}
+.debuginfo i{font-style:normal}
+.debuginfo em{color:#FF9D25; font-weight:bold; font-style:normal}
+
+.location{ 
+	clear:both;
+	text-align:left; 
+	margin:0; 
+	background:url(http://www.taoertao.com/template/default/images/global/location.gif) no-repeat 0 2px; 
+	padding-left:23px;
+}
+
+.block{display:; }
+.none{ display:none; }
+
+.pull-right{float:right}
+.pull-left{float:left}
+
+.required,.highlight{color:#ec5524!important}
+
+/*导航栏热抢新图片开始*/
+sup.xin {
+	POSITION: absolute; MARGIN-TOP: -18px; WIDTH: 19px; BACKGROUND: url(http://www.taoertao.com/template/default/images/xin.gif) no-repeat 0px 0px; HEIGHT: 23px; MARGIN-LEFT: 1px; clear:both
+}
+sup.qiang {
+	POSITION: absolute; MARGIN-TOP: -18px; WIDTH: 19px; BACKGROUND: url(http://www.taoertao.com/template/default/images/qiang.gif) no-repeat 0px 0px; HEIGHT: 23px; MARGIN-LEFT: 1px; clear:both;
+}
+sup.re {
+	POSITION: absolute; MARGIN-TOP: -18px; WIDTH: 19px; BACKGROUND: url(http://www.taoertao.com/template/default/images/re.gif) no-repeat 0px 0px; HEIGHT: 23px; MARGIN-LEFT: 1px; clear:both;
+}
+/*
+#group sup {
+	POSITION: absolute; MARGIN-TOP: -15px; WIDTH: 19px; BACKGROUND: url(../images/re.gif) no-repeat 0px 0px; HEIGHT: 23px; MARGIN-LEFT: 1px
+}*/
+
+sup, sub {
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.commentsubmit{ border:0; background:url(http://www.taoertao.com/template/default/images/global/commentsubmit.gif) no-repeat; height:31px; width:86px; color:black; font-size:14px; font-weight:bold; line-height:31px; text-align:center; cursor:pointer}
+.commenttextarea{ border:1px #c8c8c8 solid;padding:5px;}
+.commenttxt{ border:1px #c8c8c8 solid;width:40px;padding:5px;}
+
+.subsearch{
+	width:998px;
+	height:auto;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px #E3E7E9 solid;
+	border-right:1px #E3E7E9 solid;
+	background:url(http://www.taoertao.com/template/default/images/global/subsearch_bg.gif) #ffffff top center repeat-x;
+	padding-bottom:10px;
+	overflow:auto;
+}
+	.subsearch ul{ margin-top:10px; padding-left:13px;}
+	.subsearch ul li{ float:left; display:inline; width:97px; overflow:hidden; font-size:14px;border-right:1px #efefef solid; text-align:center; padding:0 5px}
+	.subsearch ul li.n9,.subsearch ul li.n27,.subsearch ul li.n18{ border-right:none!important;}
+	.subsearch ul li a{ color:#222; display:block; white-space:nowrap; overflow:hidden; width:95px; height:28px; line-height:28px; border:1px #fff solid;}
+	.subsearch ul li a:hover{display:block; text-decoration:none;  border:1px #ffffff solid; border-radius:5px;}
+	.subsearchbottomline{ width:1000px; margin-left:auto; margin-right:auto; height:3px; background:url(http://www.taoertao.com/template/default/images/global/subsearch_btm_bg.gif) 0 0 repeat-x;}
+/*advertisement*/
+.topbanner{width:1000px; overflow:hidden; text-align:center; height:auto;}
+.topbannerad{ margin-top:5px;}
+
+.footerbanner{width:1000px; overflow:hidden; text-align:center; margin:0 auto 3px auto; clear:both}
+.footerbannerad{ margin-bottom:5px;}
+.topbanner img{}
+.header {
+	text-align:left;
+	width:1000px;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+.headerbanner{ display:block; float:left; margin:0 3px 0 0;}
+.headerbanner a{ margin-top:7px; display:block;}
+.headerbanner a img{}
+.intercatad { margin-bottom:10px}
+
+.interlistdiv{color:#585858; text-align:left;}
+.interlistdiv .hover{ padding:10px; line-height:22px; border-bottom:1px solid #dedede; }
+.interlistdiv .hovercolor{ background-color:#F8F8F9; background-image:url(http://www.taoertao.com/template/default/images/category/advfontbg.gif); background-position: top right; background-repeat: no-repeat;}
+.interlistdiv a{ font-size:14px; text-align:left}
+
+.intercatdiv{width:160px; float:right; margin-left:10px; background-color:#ffffff; height: auto; overflow:hidden}
+.intercatdiv2{width:160px; margin-left:2px; background-color:#ffffff; height: auto; overflow:hidden}
+
+.infoaddiv{width:680px; background-color:#ffffff; *height:100%; _height:auto; overflow:auto; _overflow:; clear:both; margin:0 auto; overflow:hidden; text-align:center;}
+.infoad {margin:0 5px 10px 0;}
+.indexcatad { width:1000px; margin:5px auto 0 auto; overflow:hidden; *margin-bottom:5px;}

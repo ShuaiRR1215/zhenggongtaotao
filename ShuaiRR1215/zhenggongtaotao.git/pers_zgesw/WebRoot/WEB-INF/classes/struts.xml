@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="Action" extends="struts-default" namespace="/">
+		<!-- 配置访问首页的Action -->
+		<action name="index" class="indexAction">
+			<result name="index" type="redirect">/jsp/index.jsp</result>
+		</action>
+		<!-- 控制页面转向 -->
+		<action name="index_*" class="indexAction" method="{1}">
+			<result name="toLoginPage" type="redirect">/jsp/user/login.jsp</result>
+			<result name="toForgetPwd" type="redirect">/jsp/user/forgetpwd.jsp</result>
+			<result name="toRegPage" type="redirect">/jsp/user/register.jsp</result>
+		</action>
+		<action name="checkImgAction" class="checkImgAction"/>
+		
+		<!-- UserAction -->
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="loginSuccess" type="redirect">/jsp/commons/msg.jsp</result>
+			<result name="loginFailed">/jsp/user/login.jsp</result>
+			<result name="loginCodeError">/jsp/user/login.jsp</result>
+			<result name="stateError">/jsp/user/login.jsp</result>
+			<result name="fCodeError">/jsp/user/forgetpwd.jsp</result>
+			<result name="registerSuccess" type="redirect">/jsp/commons/msg.jsp</result>
+			<result name="registerFailed">/jsp/user/register.jsp</result>
+			<result name="registerCodeError">/jsp/user/register.jsp</result>
+		</action>
+	</package>
+</struts>
