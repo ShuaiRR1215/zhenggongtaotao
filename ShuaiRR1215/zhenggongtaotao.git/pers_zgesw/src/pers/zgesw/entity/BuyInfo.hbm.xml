@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="pers.zgesw.entity.BuyInfo" table="buyinfo">
+		<id name="bid" type="java.lang.Integer">
+			<column name="bid" />
+			<generator class="native" />
+		</id>
+		<property name="bTitle" type="java.lang.String" >
+			<column name="bTitle" />
+		</property>
+		<property name="bContent" type="java.lang.Double" >
+			<column name="bContent" />
+		</property>
+		<property name="pubTimes" type="java.util.Date">
+			<column name="pubTimes" />
+		</property>
+		<property name="lastTimes" type="java.util.Date">
+			<column name="lastTimes" />
+		</property>
+		<property name="bViews" type="java.lang.Integer" >
+			<column name="bViews" />
+		</property>
+		<many-to-one name="user" column="uid" class="pers.zgesw.entity.User"
+			fetch="join">
+		</many-to-one>
+		<set name="replys" lazy="false">
+			<key>
+				<column name="bid" />
+			</key>
+			<one-to-many class="pers.zgesw.entity.Reply" />
+		</set>
+	</class>
+</hibernate-mapping>
