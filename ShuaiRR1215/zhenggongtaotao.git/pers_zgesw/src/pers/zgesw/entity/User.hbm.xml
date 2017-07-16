@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2017-7-15 13:52:00 by Hibernate Tools 3.5.0.Final -->
+<!-- Generated 2017-7-16 9:33:46 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="pers.zgesw.entity.User" table="user">
+    <class name="pers.zgesw.entity.User" table="USER">
         <id name="uid" type="java.lang.Integer">
             <column name="uid" />
             <generator class="native" />

@@ -3,7 +3,7 @@ package pers.zgesw.entity;
 import java.util.Set;
 
 public class Category {
-	private String cid;
+	private Integer cid;
 	private String cname;
 
 	private Set<CategorySecond> categorySeconds;
@@ -12,11 +12,11 @@ public class Category {
 		super();
 	}
 
-	public String getCid() {
+	public Integer getCid() {
 		return cid;
 	}
 
-	public void setCid(String cid) {
+	public void setCid(Integer cid) {
 		this.cid = cid;
 	}
 
