@@ -1,3 +1,4 @@
+@CHARSET "UTF-8";
 body.blue{ background:url(http://www.taoertao.com/template/default/images/global/bluebg.gif) center 0 repeat-x}
 /*body.green{ background:url(../images/global/greenbg.gif) center 0 no-repeat;}*/
 body.orange{ background:url(http://www.taoertao.com/template/default/images/global/orangebg.gif) center 0 no-repeat}
@@ -62,7 +63,7 @@ body.orange .subsearch ul li a:hover{ background-color:#FFF5EF; color:#FF6600;}
 	.logosearchtel .postedit a.edit{ color:#848484; background-position:0 -66px;  width:126px;}
 	.logosearchtel .postedit a.edit:hover{ background-position:0 -99px;}
 		
-	/*Í·²¿ËÑË÷À¸*/
+	/*Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	.logosearchtel .websearch{
 		height:auto;
 		display:block;
@@ -288,7 +289,7 @@ body.orange .subsearch ul li a:hover{ background-color:#FFF5EF; color:#FF6600;}
 
 .required,.highlight{color:#ec5524!important}
 
-/*µ¼º½À¸ÈÈÇÀÐÂÍ¼Æ¬¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ê¼*/
 sup.xin {
 	POSITION: absolute; MARGIN-TOP: -18px; WIDTH: 19px; BACKGROUND: url(http://www.taoertao.com/template/default/images/xin.gif) no-repeat 0px 0px; HEIGHT: 23px; MARGIN-LEFT: 1px; clear:both
 }

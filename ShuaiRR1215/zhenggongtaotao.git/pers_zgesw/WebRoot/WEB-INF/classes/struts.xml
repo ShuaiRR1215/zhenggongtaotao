@@ -7,26 +7,33 @@
 	<package name="Action" extends="struts-default" namespace="/">
 		<!-- 配置访问首页的Action -->
 		<action name="index" class="indexAction">
-			<result name="index">/jsp/index.jsp</result>
+			<result name="index">/WEB-INF//jsp/index.jsp</result>
 		</action>
 		<!-- 控制页面转向 -->
 		<action name="index_*" class="indexAction" method="{1}">
-			<result name="toLoginPage" type="redirect">/jsp/user/login.jsp</result>
-			<result name="toForgetPwd" type="redirect">/jsp/user/forgetpwd.jsp</result>
-			<result name="toRegPage" type="redirect">/jsp/user/register.jsp</result>
+			<result name="toLoginPage">/WEB-INF/jsp/user/login.jsp</result>
+			<result name="toForgetPwd">/WEB-INF/jsp/user/forgetpwd.jsp</result>
+			<result name="toRegPage">/WEB-INF/jsp/user/register.jsp</result>
 		</action>
 		<action name="checkImgAction" class="checkImgAction"/>
 		
 		<!-- UserAction -->
 		<action name="user_*" class="userAction" method="{1}">
 			<result name="loginSuccess" type="redirectAction">/index.action</result>
-			<result name="loginFailed">/jsp/user/login.jsp</result>
-			<result name="loginCodeError">/jsp/user/login.jsp</result>
-			<result name="stateError">/jsp/user/login.jsp</result>
-			<result name="fCodeError">/jsp/user/forgetpwd.jsp</result>
-			<result name="registerSuccess" type="redirect">/jsp/commons/msg.jsp</result>
-			<result name="registerFailed">/jsp/user/register.jsp</result>
-			<result name="registerCodeError">/jsp/user/register.jsp</result>
+			<result name="loginFailed">/WEB-INF/jsp/user/login.jsp</result>
+			<result name="loginCodeError">/WEB-INF/jsp/user/login.jsp</result>
+			<result name="stateError">/WEB-INF/jsp/user/login.jsp</result>
+			<result name="fCodeError">/WEB-INF/jsp/user/forgetpwd.jsp</result>
+			<result name="registerSuccess">/WEB-INF/jsp/commons/msg.jsp</result>
+			<result name="registerFailed">/WEB-INF/jsp/user/register.jsp</result>
+			<result name="registerCodeError">/WEB-INF/jsp/user/register.jsp</result>
+		</action>
+		<!-- SellInfoAction -->
+		<action name="sel_*" class="sellInfoAction" method="{1}">
+			<result name="findAll">/WEB-INF/jsp/sellinfolist.jsp</result>
+			<result name="findSellListByCid">/WEB-INF/jsp/sellinfolist.jsp</result>
+			<result name="findSellListByCsid">/WEB-INF/jsp/sellinfolist.jsp</result>
+			<result name="findSellInfoBySid">/WEB-INF/jsp/selldetail.jsp</result>
 		</action>
 	</package>
 </struts>

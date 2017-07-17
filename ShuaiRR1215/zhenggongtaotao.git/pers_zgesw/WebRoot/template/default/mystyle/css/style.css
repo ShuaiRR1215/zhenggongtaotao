@@ -405,6 +405,7 @@ input{ outline:none; border:none;}
 	color:#666;
 	font-family:微软雅黑;
 	}
+/* 
 .ershou .imgShow{
 	width:270px;
 	}
@@ -415,14 +416,15 @@ input{ outline:none; border:none;}
 .ershou .imgShow li img{ 
 	width:80px;
 	height:80px;
-	}
+	} 
 .ershou .ershouInfo{ 
 	width:720px;
 	border-left:#ccc solid 1px;
 	}
+*/
 .ershou .ershouInfo li{
 	float:left;
-	width:350px;
+	width:900px;
 	height:25px;
 	line-height:25px;
 	margin-left:10px;

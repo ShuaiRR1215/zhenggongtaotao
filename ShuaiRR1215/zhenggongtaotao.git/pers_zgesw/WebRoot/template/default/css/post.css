@@ -1,3 +1,4 @@
+@CHARSET "UTF-8";
 .body1000{ background:#ffffff}
 span.yes, span.no { background-image:url(http://www.taoertao.com/template/default/images/yesno.gif); background-repeat:no-repeat; height:29px; width:287px; line-height:29px; margin-top:2px; margin-left:5px; float:left;}
 span.yes { background-position:0 -29px; display:block;}
@@ -385,7 +386,7 @@ input.gray{border:1px solid;cursor:pointer;border-color:#fff #848484 #848484 #ff
 }
 #side_tio dd{ overflow:auto; height:100%}
 
-/*20110829ÐÂÔö*/
+/*20110829ï¿½ï¿½ï¿½ï¿½*/
 .ym-mainmnu{}
 .ym-mainmnu a{ font-size:14px;}
 .ym-tab{ float:left; width:170px; height:50px; line-height:40px; text-indent:10px; padding-right:270px; z-index:998; }
@@ -532,8 +533,8 @@ label input{margin-right:3px}
 .publish-detail .input-230,.input-large{width:230px}
 .publish-detail .input-400,.input-larger{width:400px}
 .publish-detail .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
-.publish-detail .fabu1{ *display:block; *float:left; width:107px; height:34px; margin-right:3px; overflow:hidden; background:url(http://www.taoertao.com/template/default/images/post/fabu.gif) no-repeat 0px 0px; border:none; cursor:pointer; text-align:center; font:700 14px/34px "ËÎÌå",sans-serif; color:#fff;}
-.publish-detail .fabu2{ *display:block; *float:left; width:107px; height:34px; margin-right:3px; overflow:hidden; background:url(http://www.taoertao.com/template/default/images/post/fabu.gif) no-repeat 0px -33px; border:none; cursor:pointer; text-align:center; font:700 14px/34px "ËÎÌå",sans-serif; color:#a0a0a0;}
+.publish-detail .fabu1{ *display:block; *float:left; width:107px; height:34px; margin-right:3px; overflow:hidden; background:url(http://www.taoertao.com/template/default/images/post/fabu.gif) no-repeat 0px 0px; border:none; cursor:pointer; text-align:center; font:700 14px/34px "ï¿½ï¿½ï¿½ï¿½",sans-serif; color:#fff;}
+.publish-detail .fabu2{ *display:block; *float:left; width:107px; height:34px; margin-right:3px; overflow:hidden; background:url(http://www.taoertao.com/template/default/images/post/fabu.gif) no-repeat 0px -33px; border:none; cursor:pointer; text-align:center; font:700 14px/34px "ï¿½ï¿½ï¿½ï¿½",sans-serif; color:#a0a0a0;}
 select.input{ margin-left:0!important;}
 .publish-detail-item label{ float:left!important; line-height:32px; margin-right:10px; display:block}
 .publish-detail-item .units{ float:left; display:block; line-height:32px; margin-left:5px; margin-right:10px;}

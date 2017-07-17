@@ -11,7 +11,7 @@ public class SellInfo {
 	private Double sPrice;// 出售价格
 	private Double sBuyPrice;// 原价格
 	private String sLink;// 购买链接
-	private Integer newDegree;// 新旧程度
+	private String newDegree;// 新旧程度
 	private String sdesc;// 描述
 	private Date pubDate;// 发布日期
 	private Integer sViews;// 浏览数
@@ -65,11 +65,13 @@ public class SellInfo {
 		this.sLink = sLink;
 	}
 
-	public Integer getNewDegree() {
+	
+
+	public String getNewDegree() {
 		return newDegree;
 	}
 
-	public void setNewDegree(Integer newDegree) {
+	public void setNewDegree(String newDegree) {
 		this.newDegree = newDegree;
 	}
 

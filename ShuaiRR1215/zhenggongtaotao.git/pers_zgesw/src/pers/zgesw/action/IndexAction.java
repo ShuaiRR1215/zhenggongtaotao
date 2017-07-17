@@ -10,6 +10,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 import pers.zgesw.entity.Category;
+import pers.zgesw.entity.SellInfo;
 import pers.zgesw.service.CategoryService;
 
 /**
@@ -31,10 +32,16 @@ public class IndexAction extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
+
+		// 搜索所有的一级以及二级分类展示在首页上
 		List<Category> cList = categoryService.findAllCategory();
-		if (cList != null) {
+		if (cList != null && cList.size() > 0)
 			ActionContext.getContext().getValueStack().set("cList", cList);
-		}
+
+		// 通过首页查询出最新发布的信息，并展示在首页上
+		List<SellInfo> sList = categoryService.findNewestInfo();
+		if (sList != null && sList.size() > 0)
+			ActionContext.getContext().getValueStack().set("sList", sList);
 		return "index";
 	}
 

@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-	<class name="pers.zgesw.entity.SellInfo" table="sellinfos">
+	<class name="pers.zgesw.entity.SellInfo" table="sellinfo">
 		<id name="sid" type="java.lang.Integer">
 			<column name="sid" />
 			<generator class="native" />
@@ -20,7 +20,7 @@
 		<property name="sLink" type="java.lang.String" >
 			<column name="sLink" />
 		</property>
-		<property name="newDegree" type="java.lang.Integer">
+		<property name="newDegree" type="java.lang.String">
 			<column name="newDegree" />
 		</property>
 		<property name="sdesc" type="java.lang.String">

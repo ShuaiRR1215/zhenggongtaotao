@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import pers.zgesw.dao.CategoryDao;
 import pers.zgesw.entity.Category;
+import pers.zgesw.entity.SellInfo;
 
 @Transactional
 @Service("categoryService")
@@ -26,6 +27,10 @@ public class CategoryService {
 	 */
 	public List<Category> findAllCategory() {
 		return categoryDao.findAllCategory();
+	}
+
+	public List<SellInfo> findNewestInfo() {
+		return categoryDao.findNewestInfo();
 	}
 
 }
