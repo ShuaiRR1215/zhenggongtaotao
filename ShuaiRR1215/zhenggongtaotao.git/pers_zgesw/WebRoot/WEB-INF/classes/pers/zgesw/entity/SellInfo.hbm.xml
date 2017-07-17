@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="pers.zgesw.entity.SellInfo" table="sellinfo">
+		<id name="sid" type="java.lang.Integer">
+			<column name="sid" />
+			<generator class="native" />
+		</id>
+		<property name="sTitle" type="java.lang.String" >
+			<column name="sTitle" />
+		</property>
+		<property name="sPrice" type="java.lang.Double" >
+			<column name="sPrice" />
+		</property>
+		<property name="sBuyPrice" type="java.lang.Double" >
+			<column name="sBuyPrice" />
+		</property>
+		<property name="sLink" type="java.lang.String" >
+			<column name="sLink" />
+		</property>
+		<property name="newDegree" type="java.lang.String">
+			<column name="newDegree" />
+		</property>
+		<property name="sdesc" type="java.lang.String">
+			<column name="sdesc" />
+		</property>
+		<property name="pubDate" type="java.util.Date">
+			<column name="pubDate" />
+		</property>
+		<property name="sViews" type="java.lang.Integer" >
+			<column name="sViews" />
+		</property>
+		<many-to-one name="user" column="uid" class="pers.zgesw.entity.User"
+			fetch="join">
+		</many-to-one>
+		<many-to-one name="categorySecond" column="csid"
+			class="pers.zgesw.entity.CategorySecond" cascade="delete" fetch="join">
+		</many-to-one>
+		<set name="comments" lazy="false">
+			<key>
+				<column name="sid" />
+			</key>
+			<one-to-many class="pers.zgesw.entity.Comment" />
+		</set>
+		<set name="imgInfos" lazy="false">
+			<key>
+				<column name="sid" />
+			</key>
+			<one-to-many class="pers.zgesw.entity.ImgInfo" />
+		</set>
+	</class>
+</hibernate-mapping>

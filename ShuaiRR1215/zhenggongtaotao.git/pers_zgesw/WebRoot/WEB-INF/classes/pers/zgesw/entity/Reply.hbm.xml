@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-17 1:44:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="pers.zgesw.entity.Reply" table="reply">
+		<id name="rid" type="java.lang.Integer">
+			<column name="rid" />
+			<generator class="native" />
+		</id>
+		<property name="content" type="java.lang.String">
+			<column name="content" />
+		</property>
+		<property name="rTimes" type="java.util.Date">
+			<column name="rTimes" />
+		</property>
+		<many-to-one name="user" column="uid" lazy="false"
+			class="pers.zgesw.entity.User" fetch="join">
+		</many-to-one>
+		<many-to-one name="buyInfo" cascade="delete" column="bid"
+			lazy="false" class="pers.zgesw.entity.BuyInfo" fetch="join">
+		</many-to-one>
+	</class>
+</hibernate-mapping>
