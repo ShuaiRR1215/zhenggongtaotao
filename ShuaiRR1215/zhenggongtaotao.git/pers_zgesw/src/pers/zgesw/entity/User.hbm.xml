@@ -62,17 +62,20 @@
 		<property name="safeanswer" type="java.lang.String">
 			<column name="safeanswer" />
 		</property>
+		
 		<set name="sellInfos" lazy="false">
 			<key>
 				<column name="uid" />
 			</key>
 			<one-to-many class="pers.zgesw.entity.SellInfo" />
 		</set>
+		
 		<set name="buyInfos" lazy="false">
 			<key>
 				<column name="uid" />
 			</key>
 			<one-to-many class="pers.zgesw.entity.BuyInfo" />
 		</set>
+		
 	</class>
 </hibernate-mapping>

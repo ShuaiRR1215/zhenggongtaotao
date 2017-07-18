@@ -16,11 +16,11 @@
 	type="text/javascript"></script>
 </head>
 
-<body class="green">
+<body class="green" style="background-color: #66CDAA">
 	<div class="mhead">
 		<div class="logo">
-			<a href="index.html" target="_blank"><img
-				style="width: 250px; height: 60px;" src="images/newlogo.png"
+			<a href="index.action" target="_blank"><img
+				style="width: 251px; height: 75px;" src="images/newlogo.png"
 				title="" /></a>
 		</div>
 		<div class="navigation">
@@ -32,7 +32,7 @@
 	</div>
 	<div class="inner">
 		<div class="clearfix"></div>
-		<div class="body">
+		<div class="body" style="background-color: #66CDAA">
 			<div class="forpass">
 				<form name="ForgetpassForm" method="post"
 					action="${pageContext.request.contextPath}/user_forgetPassword.action"
@@ -41,19 +41,20 @@
 					<table cellpadding="0" cellspacing="0" class="formlogin">
 						<tr>
 							<td class="tdright" style="height: 30px !important;"><font
-								color="red">*</font>用户名：</td>
+								color="red">*</font><font size="3">用户名：</font></td>
 							<td><input name="username" type="text"
 								class="input input-230"
 								value="<s:property value="user.username"/>"></td>
 						</tr>
 						<tr>
-							<td class="tdright" style="height: 30px !important;">提示问题：</td>
+							<td class="tdright" style="height: 30px !important;"><font
+								size="3"><font color="red">*</font>提示问题：</font></td>
 							<td><select name="safequestion" id="safequestion"
 								class="input"><option value="0">请选择安全提示问题</option>
 									<option value="1">你最喜欢的格言什么？</option>
-									<option value="2">你家乡的名称是什么？</option>
+									<option value="3">你家乡的名称是什么？</option>
 									<option value="3">你读的小学叫什么？</option>
-									<option value="4">你的父亲叫什么名字？</option>
+									<option value="3">你的父亲叫什么名字？</option>
 									<option value="5">你的母亲叫什么名字？</option>
 									<option value="6">你最喜欢的偶像是谁？</option>
 									<option value="7">你最喜欢的歌曲是什么？</option>
@@ -61,32 +62,31 @@
 						</tr>
 						<tr>
 							<td class="tdright" style="height: 30px !important;"><font
-								color="red">*</font>提示答案：</td>
+								color="red">*</font><font size="3">提示答案：</font></td>
 							<td><input name="safeanswer" id="safeanswer"
 								class="input input-230"></td>
 						</tr>
 						<tr>
 							<td class="tdright" style="height: 30px !important;"><font
-								color="red">*</font>新密码：</td>
+								color="red">*</font><font size="3">新密码：</font></td>
 							<td><input name="password" class="input input-230"
 								type="password"></td>
 						</tr>
 						<tr>
 							<td class="tdright" style="height: 30px !important;"><font
-								color="red">*</font>再次输入：</td>
+								color="red">*</font><font size="3">再次输入：</font></td>
 							<td><input name="repassword" class="input input-230"
 								type="password"></td>
 						</tr>
 						<tr>
-							<td class="tdright" style="height: 30px !important;"><font
-								color="red">*</font>验证码：</td>
+							<td class="tdright" style="height: 30px !important; width: 200px"><font
+								color="red">*</font><font size="3">验证码：</font></td>
 							<td><input type="text" name="checkCode"
 								class="input input-230" style="width: 60px" /> <img
 								id="verifyCodeId"
 								src="${pageContext.request.contextPath}/checkImgAction.action"
-								alt="看不清，请点击刷新"  class="authcode"
-								onClick="getCode()" /></td>
-								<td><font color="red"><s:property value="user.code" /></font></td>
+								alt="看不清，请点击刷新" class="authcode" onClick="getCode()" /></td>
+							<td><font color="red"><s:property value="user.code" /></font></td>
 						</tr>
 						<tr>
 							<td class="tdright" style="height: 30px !important;">&nbsp;</td>
@@ -106,13 +106,9 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-		<div class="clear"></div>
-		<div class="footer">
-			&copy; 郑工淘淘 <a href="aboutus.html" target="_blank">关于我们</a> <a
-				href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备16002812号</a>
-			<br /> <br />
+		<div class="footer" style="background-color: #66CDAA">
+			&copy; 郑工淘淘 <a href="#" target="_blank">关于我们</a> <br /> <br />
 
 			<script>
 				var _hmt = _hmt || [];

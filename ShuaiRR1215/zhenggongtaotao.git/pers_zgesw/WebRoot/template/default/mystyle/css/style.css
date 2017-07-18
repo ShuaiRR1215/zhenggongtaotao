@@ -236,7 +236,7 @@ input{ outline:none; border:none;}
 	}
 
 /*焦点图样式*/
-.mainTop .indexMid{width:570px;}
+.mainTop .indexMid{width:570px;height: 330px}
 .mainTop .focusMap{
 	/*border:#999 solid 1px;*/
 	margin:10px;

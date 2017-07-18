@@ -73,7 +73,7 @@
 									<div class='typo-smalls'>
 										<s:property value="#sellinfo.categorySecond.csname" />
 										|
-										<s:property value="#sellinfo.pubDate" />
+										<s:date name="#sellinfo.pubDate" format="yyyy-MM-dd HH:MM:SS" />
 										</span> <span class='highlight'></span>
 									</div>
 								</div></li>
@@ -97,7 +97,7 @@
 					</s:iterator>
 				</div>
 				<div class="totalpost">
-					<a href="user_publishInfo.action" target="_blank">马上发布一条跳蚤市场信息&raquo;</a>
+					<a href="user_publishInfo.action" target="_blank">马上发布一条售卖信息>>></a>
 				</div>
 			</div>
 		</div>

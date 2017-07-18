@@ -81,10 +81,10 @@
 	<div class="mhead">
 		<div class="logo">
 			<a href="index.html" target="_blank"><img
-				style="width: 250px; height: 60px;" src="images/newlogo.png"
+				style="width: 251px; height: 75px;" src="images/newlogo.png"
 				title="郑工淘淘" /></a>
 		</div>
-		<div class="navigation">
+		<div class="navigation" height="95px" width="800px">
 			<a href="${pageContext.request.contextPath}/index_toLoginPage.action">用户登录</a>
 			<a href="${pageContext.request.contextPath}/index_toRegPage.action"
 				class="current">立即注册</a> <a
@@ -171,11 +171,12 @@
 								</tr>
 								<tr>
 									<td class="tdright"><font color=red>*</font>验证码：</td>
-									<td><input type="text" name="checkCode"
-										class="input" id="checkcode" maxlength="4"> <img
+									<td><input type="text" name="checkCode" class="input"
+										id="checkcode" maxlength="4"> <img
 										src="${pageContext.request.contextPath}/checkImgAction.action"
 										id="verifyCodeId" title="看不清，请点击刷新" class="authcode" /></td>
-									<td><font color="red"> <s:property value="user.code"/></font></td>
+									<td><font color="red"> <s:property
+												value="user.code" /></font></td>
 								</tr>
 								<tr>
 									<td class="tdright" style="height: 44px"></td>
@@ -216,9 +217,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="footer">
-			&copy; 郑工淘淘 <a href="aboutus.html" target="_blank">关于我们</a> <a
-				href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备16002812号</a>
-			<br /> <br />
+			&copy; 郑工淘淘 <a href="#" target="_blank">关于我们</a> <br /> <br />
 
 			<script>
 				var _hmt = _hmt || [];

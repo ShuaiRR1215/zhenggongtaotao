@@ -21,8 +21,10 @@ public class CategoryDaoImpl extends HibernateDaoSupport implements CategoryDao 
 	 */
 	@Override
 	public List<Category> findAllCategory() {
+		
 		return this.getHibernateTemplate().loadAll(Category.class);
 	}
+
 	/**
 	 * 查询最新商品实现
 	 */

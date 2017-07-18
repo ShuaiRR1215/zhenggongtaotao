@@ -6,48 +6,40 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>发布信息 - 淘淘</title>
 <link rel="stylesheet" type="text/css"
-	href="http://www.taoertao.com/template/default/css/global.css" />
+	href="${pageContext.request.contextPath}/template/default/css/global.css" />
 <link rel="stylesheet" type="text/css"
-	href="http://www.taoertao.com/template/default/css/style.css" />
+	href="${pageContext.request.contextPath}/template/default/css/style.css" />
 <link rel="stylesheet" type="text/css"
-	href="http://www.taoertao.com/template/default/css/post.css" />
-<script src="http://www.taoertao.com/mypub/noerr.js"
-	type="text/javascript"></script>
-<script src="http://www.taoertao.com/template/default/js/global.js"
-	type="text/javascript"></script>
-<script src="http://www.taoertao.com/template/default/js/jquery.min.js"
+	href="${pageContext.request.contextPath}/template/default/css/post.css" />
+<script src="${pageContext.request.contextPath}/mypub/noerr.js"
 	type="text/javascript"></script>
 <script
-	src="http://www.taoertao.com/template/default/js/validator.common.js"
+	src="${pageContext.request.contextPath}/template/default/js/global.js"
 	type="text/javascript"></script>
-<script src="http://www.taoertao.com/template/default/js/validator.js"
+<script
+	src="${pageContext.request.contextPath}/template/default/js/jquery.min.js"
 	type="text/javascript"></script>
-<script src="http://www.taoertao.com/template/default/js/post.js"
+<script
+	src="${pageContext.request.contextPath}/template/default/js/validator.common.js"
+	type="text/javascript"></script>
+<script
+	src="${pageContext.request.contextPath}/template/default/js/validator.js"
+	type="text/javascript"></script>
+<script
+	src="${pageContext.request.contextPath}/template/default/js/post.js"
 	type="text/javascript"></script>
 </head>
 
 <body class="green">
 	<div class="mhead">
 		<div class="logo">
-			<a href="index.html" target="_blank"><img
+			<a href="index.action" target="_blank"><img
 				style="width: 250px; height: 60px;" src="images/newlogo.png"
 				title="郑工淘淘" /></a>
 		</div>
-		<div class="navigation">
-			<a href="${pageContext.request.contextPath}/index_toLoginPage.action"
-				class="current">用户登录</a> <a
-				href="${pageContext.request.contextPath}/index_toRegPage.action">立即注册</a>
-			<a href="${pageContext.request.contextPath}/index_toForgetPwd.action">找回密码</a>
-		</div>
-	</div>
-	<div class="mhead">
-		<div class="logo">
-			<a href="http://www.taoertao.com" target="_blank"><img
-				style="width: 250px; height: 60px;"
-				src="http://www.taoertao.com/images/newlogo.png" title="淘二淘" /></a>
-		</div>
 		<div class="font">
-			<span>发布信息</span>
+			<span>发布信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+				href="index.action">返回首页</a></span></span>
 		</div>
 	</div>
 	<div class="cleafix"></div>
@@ -67,9 +59,9 @@
 							<label class="p-label"><span class="red required">*</span>
 								所属分类：</label>
 							<div class="publish-detail-item">
-								跳蚤市场 > 二手笔记本 &nbsp;&nbsp;<a
-									onClick="if(!confirm('更改分类将清空您当前填写的数据，您确定要更改分类吗？'))return false;"
-									href="?action=input">更改分类</a>
+								<select name="categorySecond">
+									<option value=""></option>
+								</select>
 							</div>
 						</div>
 
@@ -82,7 +74,6 @@
 									msg="信息标题不能为空" />
 							</div>
 						</div>
-
 
 						<div class="p-line">
 							<label class="p-label"><span class="red required">*</span>价格：</label>
@@ -113,7 +104,7 @@
 						<div class="p-line">
 							<label class="p-label"><span class="red required">*</span>新旧程度：</label>
 							<div class="publish-detail-item">
-								<select name="extra[new_old]" class="input" require="true"
+								<select name="newDegree" class="input" require="true"
 									datatype="limit" msg="新旧程度不能为空"><option value="">请选择新旧程度</option>
 									<option value="全新">全新</option>
 									<option value="9成新">9成新</option>
@@ -143,8 +134,8 @@
 								内容详情：</label>
 							<div class="publish-detail-item">
 								<span class="contentinner"><script charset="utf-8"
-										src="include/kindeditor/kindeditor-min.js"></script> <script
-										charset="utf-8" src="include/kindeditor/lang/zh_CN.js"></script>
+										src="/include/kindeditor/kindeditor-min.js"></script> <script
+										charset="utf-8" src="/include/kindeditor/lang/zh_CN.js"></script>
 									<script>
 										var editor;
 										KindEditor
@@ -217,7 +208,7 @@
 									msgid="code"> <img
 									src="${pageContext.request.contextPath}/checkImgAction.action"
 									title="看不清，请点击刷新" width="80" height="25" align="absmiddle"
-									style="cursor: pointer;" onClick="getCode()" class="authcode" /><span
+									style="cursor: pointer;" id="verifyCodeId" class="authcode" /><span
 									id="code"></span>
 							</div>
 						</div>
@@ -241,15 +232,16 @@
 		<div class="clear"></div>
 		<%@include file="footer.jsp"%>
 		<script type="text/javascript"
-			src="http://www.taoertao.com/template/default/js/selectoption.js"></script>
+			src="${pageContext.request.contextPath}/template/default/js/selectoption.js"></script>
 		<script language="javascript">
-			var scrollupimgpath = '<img src="http://www.taoertao.com/template/default/images/global/up.gif" />';
+			var scrollupimgpath = '<img src="${pageContext.request.contextPath}/template/default/images/global/up.gif" />';
 		</script>
-		<script src="http://www.taoertao.com/template/default/js/scrolltop.js"
+		<script
+			src="${pageContext.request.contextPath}/template/default/js/scrolltop.js"
 			type="text/javascript"></script>
 	</div>
 	<script language="javascript" type="text/javascript"
-		src="http://www.taoertao.com/template/default/js/validator3.js"></script>
+		src="${pageContext.request.contextPath}/template/default/js/validator3.js"></script>
 	<script type="text/javascript">
 		$("#verifyCodeId")
 				.click(

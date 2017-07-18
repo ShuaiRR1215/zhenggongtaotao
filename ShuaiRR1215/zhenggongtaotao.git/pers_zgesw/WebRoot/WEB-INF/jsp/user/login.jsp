@@ -26,7 +26,7 @@
 	<div class="mhead">
 		<div class="logo">
 			<a href="index.html" target="_blank"><img
-				style="width: 250px; height: 60px;" src="images/newlogo.png"
+				style="width: 251px; height: 75px;" src="images/newlogo.png"
 				title="郑工淘淘" /></a>
 		</div>
 		<div class="navigation">
@@ -98,8 +98,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="footer">
-			&copy; 郑工淘淘 <a href="aboutus.html" target="_blank">关于我们</a> <a
-				href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备16002812号</a>
+			&copy; 郑工淘淘 <a href="#" target="_blank">关于我们</a>
 			<br /> <br />
 
 			<script>

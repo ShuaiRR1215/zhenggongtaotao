@@ -32,12 +32,15 @@
 		<property name="sViews" type="java.lang.Integer">
 			<column name="sViews" />
 		</property>
+		
 		<many-to-one name="user" column="uid" class="pers.zgesw.entity.User"
 			lazy="false">
 		</many-to-one>
+		
 		<many-to-one name="categorySecond" column="csid"
 			class="pers.zgesw.entity.CategorySecond" lazy="false" cascade="delete">
 		</many-to-one>
+		
 		<set name="comments" lazy="false">
 			<key>
 				<column name="sid" />

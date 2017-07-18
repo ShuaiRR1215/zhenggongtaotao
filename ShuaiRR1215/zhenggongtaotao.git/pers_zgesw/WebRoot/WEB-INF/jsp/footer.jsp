@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-	<div id="footer">
+	pageEncoding="UTF-8"%>
+
+<div id="footer">
 	<div class="infooter">
 		<div class="mokuai clearfix">
 			<dl>
 				<dt>关于我们</dt>
 				<dd>
-					<a href="#" target="_blank">自我介绍</a>
-					<a href="#" target="_blank">联系我们</a>
+					<a href="#" target="_blank">自我介绍</a> <a href="#" target="_blank">联系我们</a>
 					<a href="#" target="_blank">网站公告</a>
 				</dd>
 			</dl>
@@ -25,10 +25,6 @@
 	<a class="go"></a>
 </div>
 
-<s:debug></s:debug>
+<s:debug/>
 
 
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/template/default/mystyle/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/template/default/mystyle/js/index.js"></script>

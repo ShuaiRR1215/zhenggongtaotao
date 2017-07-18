@@ -104,12 +104,6 @@
 						</div>
 					</div>
 					<div class="clear15"></div>
-					<script type="text/javascript">
-						/*老版详情页左侧内容中间*/
-						var cpro_id = "u2949392";
-					</script>
-					<script type="text/javascript"
-						src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
 					<div class="view_hd">
 						<div>
 							<a href="" class="currentr"><span></span>信息详情</a>
@@ -120,20 +114,11 @@
 
 
 						<div class="hd">信息评论</div>
-						<div class="bd">
-							<script type="text/javascript"
-								src="${pageContext.request.contextPath}/template/default/js/comment.js"></script>
-						</div>
+						<div class="bd"></div>
 					</div>
 				</div>
 				<div class="bd_right">
 
-					<script type="text/javascript">
-						/*老版详情页右侧顶部*/
-						var cpro_id = "u2508930";
-					</script>
-					<script type="text/javascript"
-						src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
 
 					</br> <br />
 					<div class="boxer_hd cfix">分享到...</div>
@@ -160,12 +145,12 @@
 					<div class="boxer_bd cfix action">
 						<ul>
 							<li><a rel="nofollow"
-								href="javascript:setbg('收藏信息',538,270,'${pageContext.request.contextPath}/box.php?part=shoucang&infoid=5476')">收藏</a></li>
+								href="${pageContext.request.contextPath}/user_addSellInfo?uid=<s:property value="#session.existUser.uid"/>">收藏</a></li>
 							<li><a rel="nofollow"
-								href="javascript:setbg('删除信息',538,270,'${pageContext.request.contextPath}/box.php?part=delinfo&id=5476')"
+								href="${pageContext.request.contextPath}/sel_deleteBySid?sid=<s:property value="sellInfo.sid"/>"
 								title="一旦删除将不能恢复！">删除</a></li>
 							<li><a rel="nofollow"
-								href="${pageContext.request.contextPath}/publish.php?action=edit&id=5476"
+								href="${pageContext.request.contextPath}/sel_updateBySid?sid=<s:property value="sellInfo.sid"/>"
 								target="_blank">修改</a></li>
 						</ul>
 					</div>
@@ -173,36 +158,7 @@
 					<div class="boxer_hd cfix">您感兴趣的分类</div>
 					<div class="boxer_bd cfix noborder short">
 						<ul>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-161.html"
-								title="安徽工程大学二手笔记本信息">二手笔记本</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-162.html"
-								title="安徽工程大学手机/数码产品信息">手机/数码产品</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-164.html"
-								title="安徽工程大学小功率电器信息">小功率电器</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-165.html"
-								title="安徽工程大学运动/健身器材信息">运动/健身器材</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-166.html"
-								title="安徽工程大学音响/乐器/影音信息">音响/乐器/影音</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-167.html"
-								title="安徽工程大学书籍/复习资料/学习用品信息">书籍/复习资料/学习用品</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-168.html"
-								title="安徽工程大学艺术/工艺/收藏品信息">艺术/工艺/收藏品</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-169.html"
-								title="安徽工程大学化妆品/小饰品信息">化妆品/小饰品</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-170.html"
-								title="安徽工程大学服饰/箱包/鞋帽信息">服饰/箱包/鞋帽</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/category-catid-171.html"
-								title="安徽工程大学其他日用品信息">其他日用品</a></li>
+							
 						</ul>
 					</div>
 

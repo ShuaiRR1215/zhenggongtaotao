@@ -1,13 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <div id="top">
 	<ul class="inTop clearfix">
+	  <s:if test="#session.existUser==null">
 		<li class="fr"><a
 			href="${pageContext.request.contextPath}/index_toLoginPage.action"
 			target="_blank">登陆</a></li>
 		<li class="fr"><a
 			href="${pageContext.request.contextPath}/index_toRegPage.action"
 			target="_blank">免费注册</a></li>
+	  </s:if>
+	  <s:else>
+		<li class="fr"><a
+			href="${pageContext.request.contextPath}/user_doQuit.action"
+			target="_blank">退出</a> </li>
+		<li class="fr">欢迎你，<a
+			href="${pageContext.request.contextPath}/user.findUserByUid.action?uid=<s:property value="#session.existUser.uid"/>"
+			target="_blank"><font color="red"><s:property value="#session.existUser.username"/></font></a>&nbsp; | </li>
+	  </s:else>
 	</ul>
 </div>
 <div id="header">

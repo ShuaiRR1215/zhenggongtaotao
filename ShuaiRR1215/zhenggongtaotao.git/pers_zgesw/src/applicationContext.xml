@@ -23,13 +23,13 @@
 		<property name="password" value="${jdbc.password}"></property>
 	</bean>
 
-	<!-- 配置SessionFactory -->
+	<!-- 配置sessionFactory -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<!-- 指定hibernate的配置文件位置 -->
-		<property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+		<property name="configLocation" value="classpath:hibernate.cfg.xml" />
 		<!-- 注入c3p0数据库连接池 -->
-		<property name="dataSource" ref="dataSource"/>
+		<property name="dataSource" ref="dataSource" />
 	</bean>
 
 	<!-- 此处配置事务 -->

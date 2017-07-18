@@ -12,7 +12,7 @@
             <column name="csname" />
         </property>
         <many-to-one name="category" column="cid" lazy="false"
-	class="pers.zgesw.entity.Category" fetch="join">
+	class="pers.zgesw.entity.Category" fetch="join" >
         </many-to-one>
         <set name="sellInfos" lazy="false">
             <key>
