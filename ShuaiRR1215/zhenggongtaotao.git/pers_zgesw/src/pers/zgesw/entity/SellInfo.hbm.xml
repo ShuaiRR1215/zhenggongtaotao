@@ -8,16 +8,16 @@
 			<column name="sid" />
 			<generator class="native" />
 		</id>
-		<property name="sTitle" type="java.lang.String" >
+		<property name="sTitle" type="java.lang.String">
 			<column name="sTitle" />
 		</property>
-		<property name="sPrice" type="java.lang.Double" >
+		<property name="sPrice" type="java.lang.Double">
 			<column name="sPrice" />
 		</property>
-		<property name="sBuyPrice" type="java.lang.Double" >
+		<property name="sBuyPrice" type="java.lang.Double">
 			<column name="sBuyPrice" />
 		</property>
-		<property name="sLink" type="java.lang.String" >
+		<property name="sLink" type="java.lang.String">
 			<column name="sLink" />
 		</property>
 		<property name="newDegree" type="java.lang.String">
@@ -29,14 +29,14 @@
 		<property name="pubDate" type="java.util.Date">
 			<column name="pubDate" />
 		</property>
-		<property name="sViews" type="java.lang.Integer" >
+		<property name="sViews" type="java.lang.Integer">
 			<column name="sViews" />
 		</property>
 		<many-to-one name="user" column="uid" class="pers.zgesw.entity.User"
-			fetch="join">
+			lazy="false">
 		</many-to-one>
 		<many-to-one name="categorySecond" column="csid"
-			class="pers.zgesw.entity.CategorySecond" cascade="delete" fetch="join">
+			class="pers.zgesw.entity.CategorySecond" lazy="false" cascade="delete">
 		</many-to-one>
 		<set name="comments" lazy="false">
 			<key>

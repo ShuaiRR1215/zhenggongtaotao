@@ -101,7 +101,10 @@ public class SellInfoAction extends ActionSupport implements ModelDriven<SellInf
 	 */
 	public String findSellListByCsid() {
 		// 根据二级分类id查询出该分类下的所有商品，并且分页显示
-
+		PageBean<SellInfo> pageBean = sellInfoService.findSellListByCsid(csid, page);
+		if (pageBean != null) {
+			ActionContext.getContext().getValueStack().set("pageBean", pageBean);
+		}
 		return "findSellListByCsid";
 	}
 

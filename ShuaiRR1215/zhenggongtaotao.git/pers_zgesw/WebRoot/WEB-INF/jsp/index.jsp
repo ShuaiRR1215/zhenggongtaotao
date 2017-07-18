@@ -19,27 +19,28 @@
 		<div class="mainTop clearfix">
 			<div id="classification" class="fl">
 				<ul>
-				  <s:iterator var="c" value="cList">
-					<li>
-						<p>
-							<a href="/pers_zgesw/sel_findSellListByCid.action?cid=<s:property value="c.cid"/>&page=1"
-								target="_blank"><s:property value="#c.cname"/></a>
-						</p>
-						<div class="menu">
-							<dl>
-							  <s:iterator var="cs" value="#c.categorySeconds">
-								<dd>
-									<a class="goodLink"
-										href="/pers_zgesw/sel_findSellListByCsid.action?csid=<s:property value="#cs.csid"/>"
-										target="_blank" ><s:property value="#cs.csname"/></a>
-								</dd>
-							  </s:iterator>
+					<s:iterator var="c" value="cList">
+						<li>
+							<p>
+								<a
+									href="/pers_zgesw/sel_findSellListByCid.action?cid=<s:property value="#c.cid"/>&page=1"
+									target="_blank"><s:property value="#c.cname" /></a>
+							</p>
+							<div class="menu">
+								<dl>
+									<s:iterator var="cs" value="#c.categorySeconds">
+										<dd>
+											<a class="goodLink"
+												href="/pers_zgesw/sel_findSellListByCsid.action?csid=<s:property value="#cs.csid"/>&page=1"
+												target="_blank"><s:property value="#cs.csname" /></a>
+										</dd>
+									</s:iterator>
 
-								
-							</dl>
-						</div>
-					</li>
-				  </s:iterator>
+
+								</dl>
+							</div>
+						</li>
+					</s:iterator>
 				</ul>
 			</div>
 			<div class="indexMid fl">
@@ -71,7 +72,8 @@
 			<div class="ershou clearfix">
 				<div class="classTit">
 					<span class="fl"><i class="iconfont">&#xe604;</i> 最新发布</span><span
-						class="fr"><a href="sel_findAllWithPage.action?page=1" target="_blank">更多>></a></span>
+						class="fr"><a href="sel_findAllWithPage.action?page=1"
+						target="_blank">更多>></a></span>
 				</div>
 				<div class="ershouInfo fr">
 					<ul>

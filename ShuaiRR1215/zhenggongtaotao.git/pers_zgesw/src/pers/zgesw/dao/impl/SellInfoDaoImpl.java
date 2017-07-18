@@ -2,6 +2,10 @@ package pers.zgesw.dao.impl;
 
 import java.util.List;
 
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+import org.springframework.orm.hibernate5.HibernateCallback;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
@@ -60,7 +64,7 @@ public class SellInfoDaoImpl extends HibernateDaoSupport implements SellInfoDao 
 	@Override
 	public int findSellInfoCountsByCid(Integer cid) {
 		String hql = "select count(*) from SellInfo s where s.categorySecond.category.cid = ?";
-		List<Long> list = (List<Long>) this.getHibernateTemplate().find(hql);
+		List<Long> list = (List<Long>) this.getHibernateTemplate().find(hql, cid);
 		if (list != null && !list.isEmpty()) {
 			return list.get(0).intValue();
 		}
@@ -71,12 +75,34 @@ public class SellInfoDaoImpl extends HibernateDaoSupport implements SellInfoDao 
 	 * 根据cid查询该分类的商品信息集合
 	 */
 	@Override
-	public List<SellInfo> findSellInfosByCid(int begin, int limit, int cid) {
-		// select p from Product p join p.categorySecond cs join cs.category c
-		// where c.cid = ?
-		String hql = "from SellInfo s.categorySecond cs join cs.category c where c.cid = ? ";
+	@SuppressWarnings("unchecked")
+	public List<SellInfo> findSellInfosByCid(int cid, int begin, int limit) {
+		String hql = "from SellInfo s where s.categorySecond.category.cid = ?";
 		List<SellInfo> list = this.getHibernateTemplate()
 				.execute(new PageHibernateCallback<SellInfo>(hql, new Object[] { cid }, begin, limit));
+
+		if (list != null) {
+			return list;
+		}
+		return null;
+	}
+
+	@Override
+	public int findSellInfoCountsByCsid(Integer csid) {
+		String hql = "select count(*) from SellInfo s where s.categorySecond.csid = ?";
+		List<Long> list = (List<Long>) this.getHibernateTemplate().find(hql, csid);
+		if (list != null && !list.isEmpty()) {
+			return list.get(0).intValue();
+		}
+		return 0;
+	}
+
+	@Override
+	public List<SellInfo> findSellInfosByCsid(Integer csid, int begin, int limit) {
+		String hql = "from SellInfo s where s.categorySecond.csid = ?";
+		List<SellInfo> list = this.getHibernateTemplate()
+				.execute(new PageHibernateCallback<SellInfo>(hql, new Object[] { csid }, begin, limit));
+
 		if (list != null) {
 			return list;
 		}

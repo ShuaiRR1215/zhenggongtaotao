@@ -152,6 +152,10 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 		return "foundError";
 	}
 
+	public String publishInfo() {
+		return "publishInfo";
+	}
+	
 	/**
 	 * 对退出进行控制 检查session中是否存在一个user的属性
 	 * 

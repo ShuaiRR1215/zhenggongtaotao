@@ -88,7 +88,7 @@
 						<#><s:property value="pageBean.page" /><#> --%>
 						<s:if test="pageBean.page!=#i">
 							<a
-								href='sel_findAllWithPage.action?page=<s:property value="#i"/>'><s:property
+								href='sel_findSellListByCid.action?page=<s:property value="#i"/>'><s:property
 									value="#i" /></a>
 						</s:if>
 						<s:else>

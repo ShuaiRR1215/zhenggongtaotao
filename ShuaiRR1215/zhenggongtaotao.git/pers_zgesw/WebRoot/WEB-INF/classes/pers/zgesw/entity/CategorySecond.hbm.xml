@@ -14,7 +14,7 @@
         <many-to-one name="category" column="cid" lazy="false"
 	class="pers.zgesw.entity.Category" fetch="join">
         </many-to-one>
-        <set name="sellInfos" >
+        <set name="sellInfos" lazy="false">
             <key>
                 <column name="csid" />
             </key>

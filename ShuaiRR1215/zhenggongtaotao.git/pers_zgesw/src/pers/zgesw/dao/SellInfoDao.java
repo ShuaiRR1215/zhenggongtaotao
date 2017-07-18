@@ -22,5 +22,9 @@ public interface SellInfoDao {
 
 	public List<SellInfo> findSellInfosByCid(int begin, int limit, int cid);
 
+	public int findSellInfoCountsByCsid(Integer csid);
+
+	public List<SellInfo> findSellInfosByCsid(Integer csid, int begin, int limit);
+
 
 }
