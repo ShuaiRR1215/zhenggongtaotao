@@ -108,4 +108,9 @@ public class SellInfoDaoImpl extends HibernateDaoSupport implements SellInfoDao 
 		}
 		return null;
 	}
+	
+	@Override
+	public void deleteBySid(SellInfo sellInfo) {
+		this.getHibernateTemplate().delete(sellInfo);
+	}
 }

@@ -97,7 +97,7 @@
 					</s:iterator>
 				</div>
 				<div class="totalpost">
-					<a href="user_publishInfo.action" target="_blank">马上发布一条售卖信息>>></a>
+					<a href="index_toPublishInfoPage.action" target="_blank">马上发布一条售卖信息>>></a>
 				</div>
 			</div>
 		</div>

@@ -26,5 +26,7 @@ public interface SellInfoDao {
 
 	public List<SellInfo> findSellInfosByCsid(Integer csid, int begin, int limit);
 
+	public void deleteBySid(SellInfo sellInfo);
+
 
 }

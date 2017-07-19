@@ -118,4 +118,8 @@ public class SellInfoService {
 		return pageBean;
 	}
 
+	public void deleteBySid(SellInfo sellInfo) {
+		sellInfoDao.deleteBySid(sellInfo);
+	}
+
 }

@@ -1,5 +1,8 @@
 package pers.zgesw.action;
 
+import java.io.File;
+
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -47,6 +50,19 @@ public class SellInfoAction extends ActionSupport implements ModelDriven<SellInf
 
 	public void setPage(Integer page) {
 		this.page = page;
+	}
+
+	// 接收验证码
+	private String checkCode;
+
+	public void setCheckCode(String checkCode) {
+		this.checkCode = checkCode;
+	}
+	//接收图片
+	private File image;
+	
+	public void setImage(File image) {
+		this.image = image;
 	}
 
 	@Autowired
@@ -107,5 +123,17 @@ public class SellInfoAction extends ActionSupport implements ModelDriven<SellInf
 		}
 		return "findSellListByCsid";
 	}
+
+
+	public String deleteBySid(){
+		if(sellInfo!=null) {
+			sellInfoService.deleteBySid(sellInfo);
+			return "deleteSuccess";
+		}
+		
+		ActionContext.getContext().getValueStack().set("sellInfo", sellInfo);
+		return "deleteFailed";
+	}
+	
 	
 }

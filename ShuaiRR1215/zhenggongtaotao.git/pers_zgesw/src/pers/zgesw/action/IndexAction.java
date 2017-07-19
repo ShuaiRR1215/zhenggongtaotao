@@ -71,5 +71,9 @@ public class IndexAction extends ActionSupport {
 	public String toForgetPwd() {
 		return "toForgetPwd";
 	}
+	
+	public String toPublishInfoPage(){
+		return "toPublishInfoPage";
+	}
 
 }
